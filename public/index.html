@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- title -->
-	<title>Fruitkha</title>
+	<title>J&H Textiles</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
@@ -67,7 +67,10 @@
 										<li><a href="index_2.html">Slider Home</a></li>
 									</ul>
 								</li> -->
-								<li><a href="about.html">About</a></li>
+								<li><a href="#about-section">About</a></li>
+								<li><a href="#services-section">Services</a></li>
+								<li><a href="#products-section">Products</a></li>
+								<!-- services -->
 								<!-- <li><a href="#">Pages</a>
 									<ul class="sub-menu">
 										<li><a href="404.html">404 page</a></li>
@@ -85,8 +88,8 @@
 										<li><a href="single-news.html">Single News</a></li>
 									</ul>
 								</li> -->
-								<li><a href="shop.html">Get Quote</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="#get-quote-section">Get a Quote</a></li>
+								<li><a href="#contact-us">Contact</a></li>
 								<!-- <li><a href="shop.html">Shop</a>
 									<ul class="sub-menu">
 										<li><a href="shop.html">Shop</a></li>
@@ -99,7 +102,7 @@
 								</li>
 							</ul>
 						</nav>
-						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						<!-- <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a> -->
 						<div class="mobile-menu"></div>
 						<!-- menu end -->
 					</div>
@@ -120,8 +123,8 @@
 							<!-- <p class="subtitle">{{WebSite_Head_Name}}</p> -->
 							<h1 class="text-slide">{{WebSite_Head_Name}}</h1>
 							<div class="hero-btns">
-								<a href="shop.html" class="boxed-btn">Get a Quote</a>
-								<a href="contact.html" class="bordered-btn">Contact Us</a>
+								<a href="#get-quote-section" class="boxed-btn">Get a Quote</a>
+								<a href="#contact-us" class="bordered-btn">Contact Us</a>
 							</div>
 						</div>
 					</div>
@@ -153,13 +156,79 @@
 	</div> -->
 	<!-- end features list section -->
 
-	<!-- product section -->
-	<div class="product-section mt-150 mb-150">
+	<!-- About us Section -->
+	<div class="about-section pt-150" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h3 class="text-center">About us</h3>
+						<p style="width: 700px">What is a home? It’s a cromo(colour) where every little thing is a
+							reflection of you. It’s a
+							space, you make yours by adding pieces of memories, laughter and togetherness. But beyond
+							everything, what you find in your space is the comfort. And it’s this comfort that makes you
+							feel at home.
+						</p>
+						<p style="width: 700px"> Cromoscape, a brand from the world of J AND H TEXTILES weaves
+							contemporary and traditional
+							designs on bed, bath and coordinates. Our products are not only elegant, eclectic and
+							eccentric, but are also thoughtfully crafted to make your experience of living a comfortable
+							lifestyle, more comfortable.
+						</p>
+						<p style="width: 700px">
+							With thoughtful living at heart, we create products to give you an experience. And how do we
+							do it? We do it with love, care and innovation to make better, better.
+						</p>
+						<p style="width: 700px">
+							We welcome you to our world of thoughtful living that is more yours than ours
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="row">
+				<p>this is about us</p>
+			</div> -->
+		</div>
+	</div>
+	<!-- End About us Section -->
+
+	<!-- services & product section -->
+	<div class="service-section pt-150" id="services-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="section-title">
-						<h3>Products & Services</h3>
+						<h3>{{products_data.service_header}}</h3>
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 text-center"
+					ng-repeat="services in products_data.services_list track by $index">
+					<div class="single-product-item">
+						<div class="product-image">
+							<span href="single-product.html"><img src="{{services.image_link}}" alt=""></span>
+							<!-- <a href="single-product.html"><img src="{{services.image_link}}" alt=""></a> -->
+						</div>
+						<h3>{{services.Header}}</h3>
+						<!-- <p class="product-price"> {{services.BigText}} </p> -->
+						<!-- <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="product-section pt-150" id="products-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">
+						<h3>{{products_data.product_header}}</h3>
 						<p></p>
 					</div>
 				</div>
@@ -181,7 +250,51 @@
 			</div>
 		</div>
 	</div>
-	<!-- end product section -->
+	<!-- end services & product section -->
+
+	<!-- Get a Quote Section -->
+	<div class="product-section pt-150" id="get-quote-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">
+						<h3>Get a Quote</h3>
+						<!-- <p></p> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+					<h4><input type="text" placeholder="Name" class="form-control form-control-lg" id="name-input" />
+					</h4>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+					<h4><input type="text" placeholder="Organization" class="form-control form-control-lg"
+							id="organization-input" />
+					</h4>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+					<h4><input type="email" placeholder="Email" class="form-control form-control-lg" id="email-input" />
+					</h4>
+				</div>
+				<div class="col-12 mb-3">
+					<h4><textarea type="textarea" placeholder="Description" class="form-control form-control-lg"
+							rows="4" id="desc-input"></textarea>
+					</h4>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+					<h4><input type="button" placeholder="Submit" value="Submit"
+							class="form-control form-control-lg btn btn-primary" id="submit-btn" />
+					</h4>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<!-- End Get a Quote Section -->
+
 
 	<!-- cart banner section -->
 	<!-- <section class="cart-banner pt-100 pb-100">
@@ -295,7 +408,7 @@
 	<!-- end shop banner -->
 
 	<!-- Certificates -->
-	<div class="latest-news pt-150 pb-150">
+	<!-- <div class="latest-news pt-150 pb-150">
 		<div class="container">
 
 			<div class="row">
@@ -317,18 +430,18 @@
 						<h3>{{certis.Header}}</h3>
 					</div>
 				</div>
-			</div>
-			<!-- <div class="row">
+			</div> -->
+	<!-- <div class="row">
 				<div class="col-lg-12 text-center">
 					<a href="news.html" class="boxed-btn">More Certificates</a>
 				</div>
 			</div> -->
-		</div>
-	</div>
+	<!-- </div>
+	</div> -->
 	<!-- end latest news -->
 
 	<!-- logo carousel -->
-	<div class="logo-carousel-section">
+	<!-- <div class="logo-carousel-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -342,27 +455,42 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- end logo carousel -->
 
 	<!-- footer -->
-	<div class="footer-area">
+	<div class="footer-area" id="contact-us">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-6">
+				<!-- <div class="col-lg-3 col-md-6">
 					<div class="footer-box about-widget">
 						<h2 class="widget-title">About us</h2>
 						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium
 							doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
+				</div> -->
+				<div class="col-lg-6 col-md-6">
 					<div class="footer-box get-in-touch">
-						<h2 class="widget-title">Get in Touch</h2>
+						<h2 class="widget-title">Contact us / Get in Touch</h2>
 						<ul>
-							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-							<li>support@fruitkha.com</li>
-							<li>+00 111 222 3333</li>
+							<li>
+								<address>
+									<i class="fa fa-building" aria-hidden="true"></i>
+									B-1036, City Centre – 2, B/H Big Bazaar Nr. New
+									cloth market, <br />Raipur,
+									Ahmedabad,
+									India –
+									380002
+								</address>
+							</li>
+							<li>
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								office@jandhtextiles.com
+							</li>
+							<li>
+								<i class="fas fa-phone-square" aria-hidden="true"></i>
+								+91-6355131344, +91-9974736101
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -398,8 +526,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>, All Rights
-						Reserved.</p>
+					<p>Copyrights &copy; 2022,
+						<!-- - <a href="https://imransdesign.com/">Imran Hossain</a> -->
+						All Rights
+						Reserved.
+					</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">

@@ -21,41 +21,81 @@ app.controller("myCtrl", function ($scope, $http) {
 
         //--------PRODUCTS-----------------------------------------------
         $scope.products_data = {};
-        $scope.products_data.products_list = [];
+        $scope.products_data.services_list = [];
+        $scope.products_data.prodcuts_list = [];
 
-        $scope.products_data.Header = "Our Products"
-        $scope.products_data.Body = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio."
+        $scope.products_data.service_header = "Our Services"
+        $scope.products_data.service_body = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio."
 
-        temp_products_list = [];
+        temp_services_list = [];
+        temp_services_list_obj1 = {};
+
+        temp_services_list_obj1.image_link = "assets/img/products/dyeing.jpg"
+        temp_services_list_obj1.Header = "Dyeing"
+        temp_services_list_obj1.BigText = "85$"
+
+        temp_services_list.push(temp_services_list_obj1);
+
+        temp_services_list_obj2 = {};
+        temp_services_list_obj2.image_link = "assets/img/products/printing.jpg"
+        temp_services_list_obj2.Header = "Printing"
+        temp_services_list_obj2.BigText = "85$"
+
+        temp_services_list.push(temp_services_list_obj2);
+
+        temp_services_list_obj4 = {};
+        temp_services_list_obj4.image_link = "assets/img/products/fabrics.jpg"
+        temp_services_list_obj4.Header = "Fabrics"
+        temp_services_list_obj4.BigText = "85$"
+        temp_services_list.push(temp_services_list_obj4);
+
+        $scope.products_data.services_list = temp_services_list;
+
+
+
+        $scope.products_data.product_header = "Our Products"
+        $scope.products_data.product_body = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio."
+        products_list = [];
+
         temp_products_list_obj1 = {};
-        temp_products_list_obj2 = {};
-
-        temp_products_list_obj1.image_link = "assets/img/products/dyeing.jpg"
-        temp_products_list_obj1.Header = "Dyeing"
+        temp_products_list_obj1.image_link = "assets/img/products/bedsheet.jpg"
+        temp_products_list_obj1.Header = "Bedsheets"
         temp_products_list_obj1.BigText = "85$"
+        products_list.push(temp_products_list_obj1);
 
-        temp_products_list.push(temp_products_list_obj1);
-
-        temp_products_list_obj2.image_link = "assets/img/products/printing.jpg"
-        temp_products_list_obj2.Header = "Printing"
+        temp_products_list_obj2 = {};
+        temp_products_list_obj2.image_link = "assets/img/products/blanket.jpg"
+        temp_products_list_obj2.Header = "Blankets"
         temp_products_list_obj2.BigText = "85$"
-
-        temp_products_list.push(temp_products_list_obj2);
-
+        products_list.push(temp_products_list_obj2);
 
         temp_products_list_obj3 = {};
-        temp_products_list_obj3.image_link = "assets/img/products/bedsheet.jpg"
-        temp_products_list_obj3.Header = "Bedsheets"
+        temp_products_list_obj3.image_link = "assets/img/products/comforter.jpg"
+        temp_products_list_obj3.Header = "Comforters"
         temp_products_list_obj3.BigText = "85$"
-        temp_products_list.push(temp_products_list_obj3);
+        products_list.push(temp_products_list_obj3);
 
         temp_products_list_obj4 = {};
-        temp_products_list_obj4.image_link = "assets/img/products/fabrics.jpg"
-        temp_products_list_obj4.Header = "Fabrics"
+        temp_products_list_obj4.image_link = "assets/img/products/dohar.jpg"
+        temp_products_list_obj4.Header = "Comforters"
         temp_products_list_obj4.BigText = "85$"
-        temp_products_list.push(temp_products_list_obj4);
+        products_list.push(temp_products_list_obj4);
 
-        $scope.products_data.products_list = temp_products_list;
+        temp_products_list_obj5 = {};
+        temp_products_list_obj5.image_link = "assets/img/products/duvet_cover.jpg"
+        temp_products_list_obj5.Header = "Duvet Covers"
+        temp_products_list_obj5.BigText = "85$"
+        products_list.push(temp_products_list_obj5);
+
+        temp_products_list_obj6 = {};
+        temp_products_list_obj6.image_link = "assets/img/products/towel.jpg"
+        temp_products_list_obj6.Header = "Towels"
+        temp_products_list_obj6.BigText = "85$"
+        products_list.push(temp_products_list_obj6);
+
+        // towel.jpg.jpg
+
+        $scope.products_data.products_list = products_list;
         //---------------------------------------------------------------
 
         //--------CERTIFICATES-------------------------------------------
