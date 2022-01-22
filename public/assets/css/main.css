@@ -2838,16 +2838,23 @@ table.order-details tbody td {
 }
 
 .jh-blur {
-  background: rgba(255, 255, 255, 0.0000001);
-  backdrop-filter: blur(2px);
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: rgba(5, 25, 34, 0.7);
+  /* opacity: 0.7; */
+  /* backdrop-filter: blur(2px); */
   height: 100%;
+  width: 100%;
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .jh-slide-title {
+  opacity: 2;
   color: #fff;
-  padding-top: 150px;
-  text-align: center;
-  vertical-align: middle;
+  /* text-align: center; */
+  /* padding-top: 150px; */
   /* font-size: 10em; */
   /* z-index: 999; */
 
