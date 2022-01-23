@@ -77,7 +77,7 @@ app.controller("myCtrl", function ($scope, $http) {
 
         temp_products_list_obj4 = {};
         temp_products_list_obj4.image_link = "assets/img/products/dohar.jpg"
-        temp_products_list_obj4.Header = "Comforters"
+        temp_products_list_obj4.Header = "Dohar"
         temp_products_list_obj4.BigText = "85$"
         products_list.push(temp_products_list_obj4);
 
