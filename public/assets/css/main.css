@@ -2811,7 +2811,7 @@ table.order-details tbody td {
   width: calc(5*100vw);
   max-width: calc(5*100vw);
   height: 100vh;
-  animation: slide 18s ease infinite;
+  animation: slide 24s ease infinite;
 }
 
 .jh-slide {
@@ -2826,12 +2826,12 @@ table.order-details tbody td {
 }
 
 .jh-slide:nth-child(1) {
-  background-image: url(../img/hero-bg-5.jpg);
+  background-image: url(../img/slides/dyeing.jpg);
 
 }
 
 .jh-slide:nth-child(2) {
-  background-image: url(../img/hero-bg-4.jpg);
+  background-image: url(../img/slides/comforter.png);
 
 }
 
@@ -2846,7 +2846,7 @@ table.order-details tbody td {
 }
 
 .jh-slide:nth-child(5) {
-  background-image: url(../img/hero-bg-5.jpg);
+  background-image: url(../img/slides/dyeing.jpg);
 
 }
 
@@ -2864,7 +2864,6 @@ table.order-details tbody td {
 }
 
 .jh-slide-title {
-  opacity: 2;
   color: #fff;
   /* text-align: center; */
   /* padding-top: 150px; */
