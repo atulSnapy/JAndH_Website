@@ -70,19 +70,28 @@
 								<li><a href="#about-section">About</a></li>
 								<li><a href="#services-section">Services</a>
 									<ul class="sub-menu">
-										<li><a href="404.html">Dyeing</a></li>
+										<li><a href="#services-section">Dyeing</a></li>
+										<li><a href="#services-section">Printing</a></li>
+										<li><a href="#services-section">Fabrics</a></li>
+										<!-- <li><a href="404.html">Dyeing</a></li>
 										<li><a href="about.html">Printing</a></li>
-										<li><a href="cart.html">Fabrics</a></li>
+										<li><a href="cart.html">Fabrics</a></li> -->
 									</ul>
 								</li>
 								<li><a href="#products-section">Products</a>
 									<ul class="sub-menu">
-										<li><a href="404.html">Bedsheets</a></li>
+										<li><a href="#products-section">Bedsheets</a></li>
+										<li><a href="#products-section">Blankets</a></li>
+										<li><a href="#products-section">Comforters</a></li>
+										<li><a href="#products-section">Dohar</a></li>
+										<li><a href="#products-section">Duvet Covers</a></li>
+										<li><a href="#products-section">Towels</a></li>
+										<!-- <li><a href="404.html">Bedsheets</a></li>
 										<li><a href="about.html">Blankets</a></li>
 										<li><a href="cart.html">Comforters</a></li>
 										<li><a href="cart.html">Dohar</a></li>
 										<li><a href="cart.html">Duvet Covers</a></li>
-										<li><a href="cart.html">Towels</a></li>
+										<li><a href="cart.html">Towels</a></li> -->
 									</ul>
 								</li>
 								<!-- services -->
@@ -436,12 +445,12 @@
 					ng-repeat="services in products_data.services_list track by $index">
 					<div class="single-product-item">
 						<div class="product-image">
-							<span href="single-product.html"><img src="{{services.image_link}}" alt=""></span>
+							<span href="#services-section"><img src="{{services.image_link}}" alt=""></span>
 							<!-- <a href="single-product.html"><img src="{{services.image_link}}" alt=""></a> -->
 						</div>
 						<h3>{{services.Header}}</h3>
 						<!-- <p class="product-price"> {{services.BigText}} </p> -->
-						<a href="cart.html" class="boxed-btn btn-sm">
+						<a href="#" class="boxed-btn btn-sm">
 							<i class="fas fa-angle-double-right"></i> Know More
 						</a>
 					</div>
@@ -467,12 +476,12 @@
 					ng-repeat="products in products_data.products_list track by $index">
 					<div class="single-product-item">
 						<div class="product-image">
-							<span href="single-product.html"><img src="{{products.image_link}}" alt=""></span>
+							<span href="#products-section"><img src="{{products.image_link}}" alt=""></span>
 							<!-- <a href="single-product.html"><img src="{{products.image_link}}" alt=""></a> -->
 						</div>
 						<h3>{{products.Header}}</h3>
 						<!-- <p class="product-price"> {{products.BigText}} </p> -->
-						<a href="cart.html" class="boxed-btn btn-sm">
+						<a href="#" class="boxed-btn btn-sm">
 							<i class="fas fa-angle-double-right"></i> Know More
 						</a>
 					</div>
